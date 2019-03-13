@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    
+ 
+    
+}
+
+.pad-btn {
+    width: 25%;
+    outline: 1px solid #989898;
+    background: #d2c8c8;
+}
+
+.pad-btn:first-child {
+    width: 50%;
+}

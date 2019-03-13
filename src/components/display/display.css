@@ -1,0 +1,10 @@
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 4em;
+    outline: 1px solid #989898;
+    padding: 10px;
+
+}
