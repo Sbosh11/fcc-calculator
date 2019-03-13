@@ -7,6 +7,7 @@
     
 }
 
+
 .pad-btn {
     width: 25%;
     outline: 1px solid #989898;
@@ -15,4 +16,15 @@
 
 .pad-btn:first-child {
     width: 50%;
+}
+.pad-btn:nth-child(16) {
+    width: 50%;
+}
+
+.operator:hover {
+background: #9898ff;
+}
+
+.button-c:active {
+    background: #bbb3b3
 }

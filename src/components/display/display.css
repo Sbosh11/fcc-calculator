@@ -4,7 +4,20 @@
     justify-content: flex-end;
     align-items: flex-end;
     height: 4em;
-    outline: 1px solid #989898;
     padding: 10px;
+    background: #0000ff;
+    outline: 1px solid #989898;
 
 }
+
+   @media (max-width: 459px) {
+     
+    #display {
+     background: transparent; 
+     width: 100%;
+    outline: none;
+    padding: 20px;
+     
+  }
+   }
+  

@@ -20,7 +20,7 @@ import Button from './components/buttons/button';
   {"key":"2", "id": "two"},
   {"key":"3", "id": "three"},
   {"key":"+", "id": "add"},
-  {"key":"%", "id": "percent"},
+ // {"key":"%", "id": "percent"},
   {"key":"0", "id": "zero"},
   {"key":".", "id": "decimal"},
   {"key":"=", "id": "equals"}
@@ -79,10 +79,12 @@ case button === 'AC':
 this.setState({decimal:false})
 break;
 case button === '=':
+if(!this.state.operator){
      // eslint-disable-next-line no-eval
      input = eval(input)
-     operator = false;
+   
      this.setState({decimal:true})
+}
 break;
 case button === '.':
 if(!this.state.decimal) {
@@ -91,10 +93,15 @@ if(!this.state.decimal) {
 }
 break;
 case button === '←':
-if (this.state.input.length > 1 ) {
+
+if (this.state.input.length > 1) {
 let str = input.substr(0,input.length-1);  
 input = str
+} else {
+ input = '0' ;
+ operator = false;
 }
+
 break;
 
 // no default
@@ -121,6 +128,7 @@ break;
       )}
      </div>
      </div>
+     <p>Designed by Sibongile Thanjekwayo</p>
      </div>
     );
   }
