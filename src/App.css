@@ -14,7 +14,6 @@ font-size: 0.7em;
 }
 
 .calculator {
- 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,9 +28,9 @@ font-size: 0.7em;
 .main {
   width: 400px;
   height: 60vh;
-  
   display: flex;
   flex-direction: column;
+ 
 }
 
  button {

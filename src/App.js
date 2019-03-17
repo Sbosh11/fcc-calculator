@@ -80,10 +80,9 @@ this.setState({decimal:false})
 break;
 case button === '=':
 if(!this.state.operator){
-     // eslint-disable-next-line no-eval
-     input = eval(input)
-   
-     this.setState({decimal:true})
+  // eslint-disable-next-line no-eval
+  input = eval(input)
+  this.setState({decimal:true})
 }
 break;
 case button === '.':
